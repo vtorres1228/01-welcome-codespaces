@@ -13,17 +13,17 @@
             padding: 0;
             font-family: 'Playfair Display', serif;
         }
-        h1 {
+        header {
             background-color: black;
             color: white;
-            padding: 16px;
+            padding: 24px 0;
+            text-align: center;
+        }
+        header h1 {
             margin: 0;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-family: 'Playfair Display', serif;
-            font-size: 2.2rem;
+            font-size: 2.5rem;
             font-weight: 700;
+            letter-spacing: 1px;
         }
         nav {
             background-color: #222;
@@ -37,18 +37,20 @@
             font-weight: bold;
             font-family: 'Playfair Display', serif;
             font-size: 1.1rem;
+            transition: color 0.2s;
         }
         nav a:last-child {
             margin-right: 0;
         }
         nav a:hover {
             text-decoration: underline;
+            color: #77A8BB;
         }
         .creative-heading {
             font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            color: #FFFF;
-            background: linear-gradient(90deg, #1A1A1A 0%, #1A1A1A 100%);
+            font-size: 2.2rem;
+            color: #fff;
+            background: linear-gradient(90deg, #1A1A1A 0%, #222 100%);
             padding: 32px 24px;
             margin: 32px auto 24px auto;
             border-radius: 18px;
@@ -60,11 +62,11 @@
         }
         .creative-subheading {
             font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            color: #FFFF;
+            font-size: 1.3rem;
+            color: #ffff;
             background: #1A1A1A;
             padding: 20px 32px;
-            margin: 32px auto 0 auto;
+            margin: 0 auto 32px auto;
             border-radius: 14px;
             box-shadow: 0 2px 12px rgba(30,64,175,0.07);
             max-width: 700px;
@@ -117,7 +119,9 @@
     </style>
 </head>
 <body>
-    <h1>Charity Water</h1>
+    <header>
+        <h1>Charity Water</h1>
+    </header>
     <nav>
         <a href="#">Home</a>
         <a href="#">About</a>
@@ -125,16 +129,18 @@
         <a href="#">Donate</a>
         <a href="#">Contact</a>
     </nav>
-    <div class="creative-heading">
-        Your donation = Their clean water. You're the reason change happens.
-    </div>
-    <div class="creative-subheading">
-        Know exactly where your money goes and witness the lives transformed by clean, safe water.
-    </div>
-    <div class="images-row">
-        <img src="https://d35lvrk9fb4ftj.cloudfront.net/eyJidWNrZXQiOiJkcm9wbWFyayIsImtleSI6IjUyMDQzL2Q5MTBlMjhjNTY0NjE3YmZlNTFjYTgyYTJjYzdlMTVjOTRhMDY3NWMxOWI5NTRkNWFmMjI0Y2ViNjM5MDk3MjUvcHJldmlldy9KU18yMDE3MDgwM18yMzYwLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NjAwLCJoZWlnaHQiOjYwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfX19" alt="Clean and dirty water comparison" />
-        <img src="https://d35lvrk9fb4ftj.cloudfront.net/eyJidWNrZXQiOiJkcm9wbWFyayIsImtleSI6IjUyMDQzL2EyMWNlOTAyMzRkNzdhNWNhNjdlYmQxNTdkM2YzNzA5NGJjOTA5NDAzZDY3NGNiNmMyNWY1ZmU1OWE5MmIzYWQvcHJldmlldy9NYWRhZ2FzY2FyXzIwMTlfQ0ctMjczNi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjYwMCwiaGVpZ2h0Ijo2MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX19fQ==" alt="Madagascar clean water project" />
-    </div>
+    <main>
+        <div class="creative-heading">
+            Your donation = Their clean water. You're the reason change happens.
+        </div>
+        <div class="creative-subheading">
+            Know exactly where your money goes and witness the lives transformed by clean, safe water.
+        </div>
+        <div class="images-row">
+            <img src="https://d35lvrk9fb4ftj.cloudfront.net/eyJidWNrZXQiOiJkcm9wbWFyayIsImtleSI6IjUyMDQzL2Q5MTBlMjhjNTY0NjE3YmZlNTFjYTgyYTJjYzdlMTVjOTRhMDY3NWMxOWI5NTRkNWFmMjI0Y2ViNjM5MDk3MjUvcHJldmlldy9KU18yMDE3MDgwM18yMzYwLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NjAwLCJoZWlnaHQiOjYwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfX19" alt="Clean and dirty water comparison" />
+            <img src="https://d35lvrk9fb4ftj.cloudfront.net/eyJidWNrZXQiOiJkcm9wbWFyayIsImtleSI6IjUyMDQzL2EyMWNlOTAyMzRkNzdhNWNhNjdlYmQxNTdkM2YzNzA5NGJjOTA5NDAzZDY3NGNiNmMyNWY1ZmU1OWE5MmIzYWQvcHJldmlldy9NYWRhZ2FzY2FyXzIwMTlfQ0ctMjczNi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjYwMCwiaGVpZ2h0Ijo2MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX19fQ==" alt="Madagascar clean water project" />
+        </div>
+    </main>
     <button class="donate-btn">Donate Now</button>
 </body>
 </html>
