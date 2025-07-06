@@ -1,139 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Header Example</title>
-  <style>
-    header {
-      background-color: #1A1A1A; /* light gray background for contrast */
-      padding: 20px;
-      text-align: left;
-    }
-
-    header h1 {
-      color: #FFFF; /* your requested text color */
-      margin: 0;
-      font-size: 28px;
-      font-family: Poppins bold; /* assuming Poppins is available */
-  
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Charity water</title>
+    <!-- Google Fonts: Playfair Display -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #77A8BB;
+        }
+        h1 {
+            background-color: black;
+            color: white;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .creative-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #FFFF;
+            background: linear-gradient(90deg, #1A1A1A 0%, #1A1A1A 100%);
+            padding: 32px 24px;
+            margin: 32px auto 24px auto;
+            border-radius: 18px;
+            box-shadow: 0 6px 32px rgba(30, 64, 175, 0.12);
+            text-align: center;
+            max-width: 800px;
+            letter-spacing: 1px;
+            line-height: 1.3;
+        }
+        nav {
+            background-color: #222;
+            padding: 12px 16px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1 img {
+            height: 400px; /* 10x the original 40px */
+            width: auto;
+        }
+        .creative-subheading {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #1A1A1A;
+            background: #fffbe7;
+            padding: 20px 32px;
+            margin: 32px auto 0 auto;
+            border-radius: 14px;
+            box-shadow: 0 2px 12px rgba(30,64,175,0.07);
+            max-width: 700px;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+    </style>
 </head>
 <body>
-
-  <header>
-    <h1>Charity Water</h1>
-  </header>
-
+    <h1>
+        Charity water
+    </h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Donate</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="creative-heading" style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #FFFF; background: linear-gradient(90deg, #1A1A1A 0%, #1A1A1A 100%); padding: 32px 24px; margin: 32px auto 24px auto; border-radius: 18px; box-shadow: 0 6px 32px rgba(30, 64, 175, 0.12); text-align: center; max-width: 800px; letter-spacing: 1px; line-height: 1.3;">
+        Your donation = Their clean water. You're the reason change happens.<br>
+    </div>
+    <div class="creative-subheading" style="font-family: 'Playfair Display', serif; font-size: 1.5rem; color: #FFFF; background: #1A1A1A; padding: 20px 32px; margin: 32px auto 0 auto; border-radius: 14px; box-shadow: 0 2px 12px rgba(30,64,175,0.07); max-width: 700px; text-align: center; letter-spacing: 0.5px;">
+        Know exactly where your money goes and witness the lives transformed by clean, safe water.
+    </div>
+    <div style="display: flex; flex-direction: row; align-items: flex-start; margin-top: 32px; width: 100%;">
+        <div style="flex: 1; display: flex; flex-direction: column; align-items: center;">
+            <img src="https://d35lvrk9fb4ftj.cloudfront.net/eyJidWNrZXQiOiJkcm9wbWFyayIsImtleSI6IjUyMDQzL2Q5MTBlMjhjNTY0NjE3YmZlNTFjYTgyYTJjYzdlMTVjOTRhMDY3NWMxOWI5NTRkNWFmMjI0Y2ViNjM5MDk3MjUvcHJldmlldy9KU18yMDE3MDgwM18yMzYwLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NjAwLCJoZWlnaHQiOjYwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfX19"
+                alt="Clean and dirty water comparison" 
+                style="width: 500px; height: 500px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.15); margin-bottom: 32px;">
+        </div>
+        <img src="https://d35lvrk9fb4ftj.cloudfront.net/eyJidWNrZXQiOiJkcm9wbWFyayIsImtleSI6IjUyMDQzL2EyMWNlOTAyMzRkNzdhNWNhNjdlYmQxNTdkM2YzNzA5NGJjOTA5NDAzZDY3NGNiNmMyNWY1ZmU1OWE5MmIzYWQvcHJldmlldy9NYWRhZ2FzY2FyXzIwMTlfQ0ctMjczNi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjUwMCwiaGVpZ2h0Ijo1MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX19fQ==" 
+            alt="Madagascar clean water project" 
+            style="width: 500px; height: 500px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.15); margin-left: 32px;">
+    </div>
+    <button style="position: fixed; bottom: 32px; right: 32px; background: #1A1A1A; color: #fff; font-family: 'Playfair Display', serif; font-size: 1.4rem; padding: 18px 38px; border: none; border-radius: 32px; box-shadow: 0 4px 16px rgba(30,64,175,0.15); cursor: pointer; transition: background 0.2s;">
+        Donate Now
+    </button>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page with Background Color</title>
-  <style>
-    body {
-      background-color: #77A8BB; /* your requested background color */
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    h1 {
-      text-align: left;
-      color: white;
-      padding-top: 50px;
-    }
-  </style>
-</head>
-<body>
-
-  <h1></h1>
-
-</body>
-</html>
-<img scr="https://d35lvrk9fb4ftj.cloudfront.net/eyJidWNrZXQiOiJkcm9wbWFyayIsImtleSI6IjUyMDQzL2Q5MTBlMjhjNTY0NjE3YmZlNTFjYTgyYTJjYzdlMTVjOTRhMDY3NWMxOWI5NTRkNWFmMjI0Y2ViNjM5MDk3MjUvcHJldmlldy9KU18yMDE3MDgwM18yMzYwLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NjAwLCJoZWlnaHQiOjYwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfX19"/>
-<style>
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1A1A1A;
-    padding: 20px;
-  }
-  .header-title {
-    color: #fff;
-    margin: 0;
-    font-size: 28px;
-    font-family: 'Poppins', Arial, sans-serif;
-    font-weight: bold;
-  }
-  .header-logo {
-    height: 40px; /* made smaller */
-    width: auto;
-    margin-left: auto; /* ensures it's on the right */
-    display: block;
-  }
-</style>
-
-<img src= "https://d35lvrk9fb4ftj.cloudfront.net/eyJidWNrZXQiOiJkcm9wbWFyayIsImtleSI6IjUyMDQzL2Q5MTBlMjhjNTY0NjE3YmZlNTFjYTgyYTJjYzdlMTVjOTRhMDY3NWMxOWI5NTRkNWFmMjI0Y2ViNjM5MDk3MjUvcHJldmlldy9KU18yMDE3MDgwM18yMzYwLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6NjAwLCJoZWlnaHQiOjYwMCwiZml0IjoiaW5zaWRlIiwid2l0aG91dEVubGFyZ2VtZW50Ijp0cnVlfX19"/> 
-<img src="https://d35lvrk9fb4ftj.cloudfront.net/eyJidWNrZXQiOiJkcm9wbWFyayIsImtleSI6IjUyMDQzL2EyMWNlOTAyMzRkNzdhNWNhNjdlYmQxNTdkM2YzNzA5NGJjOTA5NDAzZDY3NGNiNmMyNWY1ZmU1OWE5MmIzYWQvcHJldmlldy9NYWRhZ2FzY2FyXzIwMTlfQ0ctMjczNi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjYwMCwiaGVpZ2h0Ijo2MDAsImZpdCI6Imluc2lkZSIsIndpdGhvdXRFbmxhcmdlbWVudCI6dHJ1ZX19fQ=="/> 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Heading Example</title>
-
-  <!-- Import Playfair Display from Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      margin: 0;
-    }
-
-    .heading-section {
-      background-color: #77A8BB; /* background color for the heading section */
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .heading-section h1 {
-      font-family: 'Playfair Display', serif;
-      color: #1A1A1A; /
-      font-size: 64px;
-      font-weight: 700; /* bold */
-      margin: 0;
-      line-height: 1.4;
-    }
-  </style>
-</head>
-<body>
-
-  <section class="heading-section">
-    <h1>Your Donation = Their clean water. 
-      You're the reason change happens.</h1>
-  </section>
-
-</body>
-</html>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page with Background Color</title>
-  <style>
-    body {
-      background-color: #77A8BB; /* your requested background color */
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif; 
